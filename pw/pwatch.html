@@ -849,7 +849,7 @@
         } else {
           const vidId = (item.videoDetails && item.videoDetails.findKey) ? item.videoDetails.findKey : item._id;
           // UPDATED: pwplayer.html URL
-          let targetUrl = `pwplayer.html?video_id=${vidId}&subject_slug=${subjectSlug}&batch_id=${batchId}&schedule_id=${item._id}&subject_id=${subject_id}`;
+          let targetUrl = `../pw/pwplayer.html?video_id=${vidId}&subject_slug=${subjectSlug}&batch_id=${batchId}&schedule_id=${item._id}&subject_id=${subject_id}`;
           if (item.url) { targetUrl += `&live_url=${encodeURIComponent(item.url)}`; }
           actionBtn = `<button class="btn btn-primary w-full" onclick="window.location.href='${targetUrl}'"><i class="fas fa-play"></i> Play Lecture</button>`;
         }
