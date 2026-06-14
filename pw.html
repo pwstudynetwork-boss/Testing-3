@@ -1,0 +1,1153 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+  <title>Mtaiirus — PW Free Batches (Secure)</title>
+  <meta name="description" content="Access all Physics Wallah free batches on Mtaiirus. JEE, NEET, UPSC — completely free. No sign-up required.">
+  <link rel="icon" href="https://i.ibb.co/G3TLgSgJ/pngtree-mv-vm-letter-vector-logo-image-332121.jpg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    * {
+      -webkit-tap-highlight-color: transparent;
+      -webkit-touch-callout: none;
+    }
+    
+    :root {
+      --bg: #F5F2EB;
+      --bg2: #ECEAE2;
+      --ink: #1A1814;
+      --ink2: #6B6760;
+      --ink3: #B0ADA7;
+      --accent: #D4540E;
+      --accentl: #F0A87A;
+      --accentb: rgba(212,84,14,.08);
+      --green: #2D6A3F;
+      --greenl: #E4F0E8;
+      --blue: #1A4B8C;
+      --bluel: #E4EBF7;
+      --card: #FFFDFB;
+      --border: rgba(26,24,20,.1);
+      --borderh: rgba(26,24,20,.2);
+      --shadow: 0 2px 0 var(--border), 0 8px 30px rgba(26,24,20,.06);
+      --shadow-hover: 0 20px 40px rgba(26,24,20,.12);
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'DM Sans', sans-serif;
+      background: var(--bg);
+      color: var(--ink);
+      overflow-x: hidden;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+    }
+
+    .floating-words {
+      position: fixed;
+      inset: 0;
+      pointer-events: none;
+      z-index: 0;
+      overflow: hidden;
+      opacity: .04;
+      font-family: 'Syne', sans-serif;
+      font-weight: 800;
+      font-size: clamp(1.8rem, 5vw, 5rem);
+      color: var(--ink);
+      white-space: nowrap;
+      user-select: none;
+    }
+    .float-word {
+      position: absolute;
+      animation: floatAround 26s infinite alternate ease-in-out;
+      letter-spacing: -2px;
+    }
+    .float-word:nth-child(1) { top: 8%; left: 3%; animation-duration: 22s; }
+    .float-word:nth-child(2) { top: 22%; right: 5%; animation-duration: 30s; animation-delay: -5s; }
+    .float-word:nth-child(3) { bottom: 18%; left: 8%; animation-duration: 24s; animation-delay: -8s; }
+    .float-word:nth-child(4) { bottom: 32%; right: 4%; animation-duration: 28s; animation-delay: -13s; }
+    .float-word:nth-child(5) { top: 48%; left: 28%; animation-duration: 32s; animation-delay: -4s; }
+    .float-word:nth-child(6) { top: 68%; right: 18%; animation-duration: 20s; animation-delay: -10s; }
+    @keyframes floatAround {
+      0% { transform: translate(0,0) rotate(0deg); }
+      25% { transform: translate(35px,-25px) rotate(1.5deg); }
+      50% { transform: translate(-25px,30px) rotate(-1.5deg); }
+      75% { transform: translate(20px,15px) rotate(.8deg); }
+      100% { transform: translate(-15px,-20px) rotate(-.8deg); }
+    }
+
+    .site-header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 64px;
+      background: rgba(245,242,235,.96);
+      backdrop-filter: blur(16px);
+      border-bottom: 1px solid var(--border);
+      z-index: 1000;
+      padding: 0 clamp(16px, 4vw, 40px);
+    }
+    .header-inner {
+      max-width: 1400px;
+      margin: 0 auto;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+    }
+    .brand-link {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      text-decoration: none;
+      flex-shrink: 0;
+    }
+    .brand-logo {
+      width: 38px;
+      height: 38px;
+      border-radius: 10px;
+      background: #fff;
+      border: 1px solid var(--border);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+    }
+    .brand-logo img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+    .brand-name {
+      font-family: 'Syne', sans-serif;
+      font-size: 20px;
+      font-weight: 800;
+      color: var(--ink);
+      letter-spacing: 1.5px;
+    }
+    .brand-name span { color: var(--accent); }
+    .header-title {
+      font-family: 'Syne', sans-serif;
+      font-size: 18px;
+      font-weight: 700;
+      color: var(--ink);
+      background: var(--accentb);
+      padding: 6px 16px;
+      border-radius: 100px;
+    }
+    .search-wrapper {
+      display: flex;
+      align-items: center;
+      background: rgba(26,24,20,.05);
+      border-radius: 40px;
+      padding: 0 16px;
+      height: 42px;
+      gap: 8px;
+      flex: 1;
+      max-width: 320px;
+      border: 1px solid var(--border);
+      transition: all .2s;
+    }
+    .search-wrapper:focus-within {
+      border-color: var(--accent);
+      background: var(--card);
+      box-shadow: 0 0 0 3px rgba(212,84,14,.1);
+    }
+    .search-wrapper i {
+      color: var(--ink2);
+      font-size: 14px;
+    }
+    .search-input {
+      background: transparent;
+      border: none;
+      outline: none;
+      font-size: 14px;
+      font-family: 'DM Sans', sans-serif;
+      width: 100%;
+      color: var(--ink);
+    }
+    .search-input::placeholder {
+      color: var(--ink3);
+    }
+    .search-clear {
+      background: none;
+      border: none;
+      color: var(--ink3);
+      cursor: pointer;
+      font-size: 14px;
+      padding: 4px;
+      border-radius: 50%;
+      display: none;
+      align-items: center;
+      justify-content: center;
+      transition: all .2s;
+    }
+    .search-clear:hover {
+      color: var(--accent);
+      background: rgba(212,84,14,.1);
+    }
+    .search-clear.visible {
+      display: flex;
+    }
+
+    .main-container {
+      max-width: 1400px;
+      margin: 0 auto;
+      padding: 88px clamp(16px, 4vw, 40px) 60px;
+      position: relative;
+      z-index: 1;
+    }
+
+    .filter-bar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 16px;
+      margin-bottom: 32px;
+      padding-bottom: 16px;
+      border-bottom: 1px solid var(--border);
+    }
+    .filter-group {
+      position: relative;
+    }
+    .filter-btn {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 40px;
+      padding: 10px 20px;
+      font-size: 13px;
+      font-weight: 600;
+      font-family: 'DM Sans', sans-serif;
+      color: var(--ink2);
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      transition: all .2s;
+    }
+    .filter-btn:hover, .filter-btn.active {
+      border-color: var(--accent);
+      color: var(--accent);
+      background: var(--accentb);
+    }
+    .filter-count {
+      background: var(--accent);
+      color: white;
+      border-radius: 20px;
+      padding: 2px 8px;
+      font-size: 11px;
+      font-weight: 700;
+    }
+    .filter-dropdown {
+      position: absolute;
+      top: 100%;
+      left: 0;
+      margin-top: 8px;
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 16px;
+      min-width: 200px;
+      box-shadow: var(--shadow);
+      opacity: 0;
+      visibility: hidden;
+      transform: translateY(-8px);
+      transition: all .2s;
+      z-index: 100;
+    }
+    .filter-dropdown.open {
+      opacity: 1;
+      visibility: visible;
+      transform: translateY(0);
+    }
+    .filter-title {
+      font-size: 11px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      color: var(--ink3);
+      margin-bottom: 12px;
+    }
+    .filter-options {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      margin-bottom: 16px;
+    }
+    .filter-option {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      padding: 8px 12px;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 13px;
+      font-weight: 500;
+      color: var(--ink2);
+      transition: all .2s;
+      user-select: none;
+    }
+    .filter-option:hover {
+      background: rgba(26,24,20,.04);
+    }
+    .filter-option.selected {
+      background: var(--accentb);
+      color: var(--accent);
+      font-weight: 600;
+    }
+    .filter-checkbox {
+      width: 18px;
+      height: 18px;
+      border: 2px solid var(--border);
+      border-radius: 4px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: all .2s;
+    }
+    .filter-option.selected .filter-checkbox {
+      background: var(--accent);
+      border-color: var(--accent);
+    }
+    .filter-option.selected .filter-checkbox i {
+      color: white;
+      font-size: 10px;
+      display: block !important;
+    }
+    .filter-option .filter-checkbox i {
+      display: none;
+    }
+    .filter-actions {
+      display: flex;
+      gap: 8px;
+      padding-top: 12px;
+      border-top: 1px solid var(--border);
+    }
+    .btn-ghost-sm {
+      background: none;
+      border: none;
+      padding: 8px 12px;
+      font-size: 12px;
+      font-weight: 500;
+      color: var(--ink2);
+      cursor: pointer;
+      border-radius: 8px;
+      transition: all .2s;
+    }
+    .btn-ghost-sm:hover {
+      background: rgba(26,24,20,.05);
+    }
+    .btn-primary-sm {
+      background: var(--ink);
+      color: var(--bg);
+      border: none;
+      padding: 8px 16px;
+      font-size: 12px;
+      font-weight: 600;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: all .2s;
+    }
+    .btn-primary-sm:hover {
+      background: var(--accent);
+    }
+    .info-bar {
+      color: var(--ink3);
+      font-size: 13px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+    .search-active-badge {
+      background: var(--accentb);
+      color: var(--accent);
+      padding: 4px 12px;
+      border-radius: 20px;
+      font-size: 11px;
+      font-weight: 600;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      animation: fadeIn 0.3s ease;
+    }
+    .search-active-badge i {
+      font-size: 10px;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: scale(0.9); }
+      to { opacity: 1; transform: scale(1); }
+    }
+    .hidden { display: none !important; }
+
+    .batch-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 24px;
+    }
+
+    .card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      overflow: hidden;
+      transition: all .3s cubic-bezier(.2,0,0,1);
+      position: relative;
+    }
+    .card:hover {
+      transform: translateY(-6px);
+      box-shadow: var(--shadow-hover);
+      border-color: var(--borderh);
+    }
+    .card-image {
+      position: relative;
+      aspect-ratio: 16/9;
+      background: linear-gradient(135deg, #1a1a1a, #2a2a2a);
+      overflow: hidden;
+      cursor: pointer;
+    }
+    .card-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform .4s;
+      pointer-events: none;
+    }
+    .card:hover .card-image img {
+      transform: scale(1.03);
+    }
+    .card-badges {
+      position: absolute;
+      top: 12px;
+      left: 12px;
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+    }
+    .badge {
+      padding: 4px 10px;
+      border-radius: 40px;
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: 0.5px;
+      backdrop-filter: blur(4px);
+    }
+    .badge-trending {
+      background: var(--accent);
+      color: white;
+    }
+    .badge-enrolled {
+      background: var(--green);
+      color: white;
+    }
+    .search-highlight {
+      background: var(--accentl);
+      color: var(--ink);
+      border-radius: 4px;
+      padding: 2px 4px;
+      font-weight: 700;
+    }
+    .card-body {
+      padding: 18px;
+    }
+    .card-title {
+      font-family: 'Syne', sans-serif;
+      font-size: 15px;
+      font-weight: 700;
+      color: var(--ink);
+      line-height: 1.4;
+      margin-bottom: 8px;
+    }
+    .card-meta {
+      display: flex;
+      gap: 12px;
+      margin-bottom: 16px;
+      font-size: 11px;
+      color: var(--ink3);
+      flex-wrap: wrap;
+    }
+    .card-meta span {
+      display: flex;
+      align-items: center;
+      gap: 4px;
+    }
+    .card-actions {
+      display: flex;
+      gap: 10px;
+    }
+    .btn {
+      flex: 1;
+      padding: 10px 0;
+      border-radius: 10px;
+      font-size: 12px;
+      font-weight: 600;
+      font-family: 'DM Sans', sans-serif;
+      cursor: pointer;
+      transition: all .2s;
+      text-align: center;
+      text-decoration: none;
+      border: none;
+    }
+    .btn-primary {
+      background: var(--ink);
+      color: var(--bg);
+    }
+    .btn-primary:hover {
+      background: var(--accent);
+      transform: translateY(-1px);
+    }
+    .btn-secondary {
+      background: var(--bg2);
+      color: var(--ink2);
+      border: 1px solid var(--border);
+    }
+    .btn-secondary:hover {
+      background: var(--ink);
+      color: var(--bg);
+      border-color: var(--ink);
+    }
+    .btn-danger {
+      background: rgba(212,84,14,.12);
+      color: var(--accent);
+      border: 1px solid rgba(212,84,14,.3);
+    }
+    .btn-danger:hover {
+      background: var(--accent);
+      color: white;
+    }
+
+    .skeleton {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      overflow: hidden;
+    }
+    .skeleton-image {
+      aspect-ratio: 16/9;
+      background: linear-gradient(90deg, var(--bg2) 25%, var(--bg) 50%, var(--bg2) 75%);
+      background-size: 200% 100%;
+      animation: shimmer 1.5s infinite;
+    }
+    @keyframes shimmer {
+      0% { background-position: 200% 0; }
+      100% { background-position: -200% 0; }
+    }
+    .skeleton-body {
+      padding: 18px;
+    }
+    .skeleton-line {
+      height: 14px;
+      background: var(--bg2);
+      border-radius: 20px;
+      margin-bottom: 10px;
+    }
+    .skeleton-line-lg {
+      width: 80%;
+      height: 18px;
+    }
+    .skeleton-line-sm {
+      width: 50%;
+    }
+    .skeleton-btn {
+      height: 36px;
+      background: var(--bg2);
+      border-radius: 10px;
+      flex: 1;
+    }
+    .flex { display: flex; }
+    .gap-2 { gap: 8px; }
+    .mt-2 { margin-top: 8px; }
+    .mt-4 { margin-top: 16px; }
+
+    .empty-state {
+      text-align: center;
+      padding: 60px 20px;
+    }
+    .empty-state-icon {
+      width: 64px;
+      height: 64px;
+      margin: 0 auto 20px;
+      background: var(--bg2);
+      border-radius: 60px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 28px;
+      color: var(--ink3);
+    }
+    .empty-state-title {
+      font-family: 'Syne', sans-serif;
+      font-size: 20px;
+      font-weight: 700;
+      color: var(--ink);
+      margin-bottom: 8px;
+    }
+    .empty-state-subtitle {
+      font-size: 13px;
+      color: var(--ink2);
+    }
+    .text-center { text-align: center; }
+    .mt-8 { margin-top: 48px; }
+
+    .toast-container {
+      position: fixed;
+      bottom: 24px;
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: 2000;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      pointer-events: none;
+    }
+    .toast {
+      background: var(--ink);
+      color: var(--bg);
+      padding: 12px 20px;
+      border-radius: 50px;
+      font-size: 13px;
+      font-weight: 500;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      box-shadow: 0 4px 20px rgba(0,0,0,.15);
+      animation: slideUp 0.3s ease;
+      pointer-events: auto;
+    }
+    .toast-success i { color: var(--greenl); }
+    @keyframes slideUp {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }  
+
+    .security-watermark {
+      position: fixed;
+      bottom: 10px;
+      left: 10px;
+      font-size: 9px;
+      color: rgba(107,103,96,.15);
+      font-family: monospace;
+      z-index: 9999;
+      pointer-events: none;
+      user-select: none;
+    }
+
+    @keyframes cardSlideUp {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @media (max-width: 768px) {
+      .batch-grid { grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); }
+      .header-title { display: none; }
+      .search-wrapper { max-width: none; }
+    }
+    @media (max-width: 480px) {
+      .batch-grid { grid-template-columns: 1fr; }
+      .filter-bar { flex-direction: column; align-items: stretch; }
+      .info-bar { justify-content: space-between; }
+    }
+    @media print {
+      body { display: none !important; }
+    }
+  </style>
+</head>
+<body>
+
+<div class="floating-words">
+  <div class="float-word">FREE BATCHES</div>
+  <div class="float-word">PW · JEE · NEET</div>
+  <div class="float-word">NO SIGNUP</div>
+  <div class="float-word">MTAIIRUS</div>
+  <div class="float-word">UNLIMITED ACCESS</div>
+  <div class="float-word">PREMIUM FREE</div>
+</div>
+
+<header class="site-header">
+  <div class="header-inner">
+    <a href="index.html" class="brand-link">
+      <div class="brand-logo">
+        <img src="https://i.ibb.co/G3TLgSgJ/pngtree-mv-vm-letter-vector-logo-image-332121.jpg" alt="Mtaiirus" onerror="this.parentElement.innerHTML='<span style=\'font-size:20px\'>M</span>'">
+      </div>
+      <span class="brand-name">MTAI<span>IRUS</span></span>
+    </a>
+    <div class="search-wrapper" id="search-wrapper">
+      <i class="fas fa-search"></i>
+      <input type="text" id="search-input" class="search-input" placeholder="Search batches (Lakshya, Arjuna, Udaan...)" autocomplete="off">
+      <button class="search-clear" id="search-clear" aria-label="Clear search">
+        <i class="fas fa-times-circle"></i>
+      </button>
+    </div>
+    <div class="header-title">PW · Free Batches</div>
+  </div>
+</header>
+
+<main class="main-container">
+  <div class="filter-bar">
+    <div class="filter-group">
+      <button class="filter-btn" id="filter-btn">
+        <i class="fas fa-filter"></i> Filter
+        <span class="filter-count hidden" id="filter-count">0</span>
+      </button>
+      <div class="filter-dropdown" id="filter-dropdown">
+        <div class="filter-title">Class / Year</div>
+        <div class="filter-options">
+          <label class="filter-option" data-class="11">
+            <span class="filter-checkbox"><i class="fas fa-check"></i></span>
+            11th Class
+          </label>
+          <label class="filter-option" data-class="12">
+            <span class="filter-checkbox"><i class="fas fa-check"></i></span>
+            12th Class
+          </label>
+          <label class="filter-option" data-class="dropper">
+            <span class="filter-checkbox"><i class="fas fa-check"></i></span>
+            Dropper (NEET/JEE)
+          </label>
+        </div>
+        <div class="filter-actions">
+          <button class="btn-ghost-sm" id="clear-filters">Clear</button>
+          <button class="btn-primary-sm" id="apply-filters">Apply</button>
+        </div>
+      </div>
+    </div>
+    <div class="info-bar">
+      <span id="batch-count">Loading batches...</span>
+      <span id="search-active-badge" class="search-active-badge hidden">
+        <i class="fas fa-search"></i> "<span id="search-term-display"></span>"
+      </span>
+    </div>
+  </div>
+
+  <div class="batch-grid" id="batches-grid"></div>
+  <div class="batch-grid hidden" id="skeleton-grid">
+    <div class="skeleton"><div class="skeleton-image"></div><div class="skeleton-body"><div class="skeleton-line skeleton-line-lg"></div><div class="skeleton-line skeleton-line-sm mt-2"></div><div class="flex gap-2 mt-4"><div class="skeleton-btn"></div><div class="skeleton-btn"></div></div></div></div>
+    <div class="skeleton"><div class="skeleton-image"></div><div class="skeleton-body"><div class="skeleton-line skeleton-line-lg"></div><div class="skeleton-line skeleton-line-sm mt-2"></div><div class="flex gap-2 mt-4"><div class="skeleton-btn"></div><div class="skeleton-btn"></div></div></div></div>
+    <div class="skeleton"><div class="skeleton-image"></div><div class="skeleton-body"><div class="skeleton-line skeleton-line-lg"></div><div class="skeleton-line skeleton-line-sm mt-2"></div><div class="flex gap-2 mt-4"><div class="skeleton-btn"></div><div class="skeleton-btn"></div></div></div></div>
+  </div>
+
+  <div class="empty-state hidden" id="empty-state">
+    <div class="empty-state-icon"><i class="fas fa-search"></i></div>
+    <h2 class="empty-state-title">No batches found</h2>
+    <p class="empty-state-subtitle">Try adjusting your search term or filters to find what you're looking for.</p>
+  </div>
+
+  <div class="text-center mt-8 hidden" id="load-more-container">
+    <button class="btn btn-secondary" id="load-more-btn" style="padding: 12px 32px;">Load More →</button>
+  </div>
+</main>
+
+<div class="toast-container" id="toast-container"></div>
+<div class="security-watermark">🔒 MTAIIRUS SECURE • v4.8.1</div>
+
+<script>
+(function() {
+  'use strict';
+  
+  // ==================== SECURITY LAYER ====================
+  document.addEventListener('contextmenu', function(e) {
+    e.preventDefault();
+    e.stopPropagation();
+    return false;
+  }, true);
+  
+  document.addEventListener('keydown', function(e) {
+    const key = e.key || '';
+    const keyCode = e.keyCode || e.which;
+    if (keyCode === 123) {
+      e.preventDefault();
+      e.stopPropagation();
+      return false;
+    }
+    if ((e.ctrlKey || e.metaKey) && e.shiftKey && (key === 'I' || key === 'J' || key === 'C' || key === 'i' || key === 'j' || key === 'c')) {
+      e.preventDefault();
+      e.stopPropagation();
+      return false;
+    }
+    if ((e.ctrlKey || e.metaKey) && (key === 'U' || key === 'u' || key === 'S' || key === 's' || key === 'P' || key === 'p')) {
+      e.preventDefault();
+      e.stopPropagation();
+      return false;
+    }
+  }, true);
+  
+  document.addEventListener('copy', function(e) { e.preventDefault(); return false; }, true);
+  document.addEventListener('cut', function(e) { e.preventDefault(); return false; }, true);
+  document.addEventListener('paste', function(e) { e.preventDefault(); return false; }, true);
+  document.addEventListener('selectstart', function(e) { e.preventDefault(); return false; }, true);
+  
+  // Debugger detection
+  setInterval(function() {
+    const start = performance.now();
+    debugger;
+    const end = performance.now();
+    if (end - start > 100) {
+      window.location.href = 'about:blank';
+    }
+  }, 2000);
+  
+  setInterval(function() {
+    console.clear();
+  }, 500);
+  
+  // ==================== APP FUNCTIONALITY ====================
+  
+  const BATCH_API = 'https://rarestudy.github.io/rarestudy/batches.json';
+  const TRENDING = ['Earners', 'Mission 100 NEET', 'Lakshya JEE 2027', 'Lakshya NEET 2027', 'Arjuna JEE 2027', 'Arjuna NEET 2027', 'Udaan 2027', 'Neev 2027'];
+  const EXCLUDED = ['Little Masters 2026 (Class 5th)', 'Summer Camp 2025 (Class 5th)', 'Junoon (7th Class)', 'PW-NSAT', 'NSAT', 'Foundation'];
+
+  let allBatches = [];
+  let filteredBatches = [];
+  let currentPage = 1;
+  const ITEMS_PER_PAGE = 24;
+  let activeFilters = [];
+  let searchQuery = '';
+  let enrolledBatches = JSON.parse(localStorage.getItem('mtaiirus_enrolled') || '[]');
+
+  const grid = document.getElementById('batches-grid');
+  const skeletonGrid = document.getElementById('skeleton-grid');
+  const emptyState = document.getElementById('empty-state');
+  const batchCountSpan = document.getElementById('batch-count');
+  const filterBtn = document.getElementById('filter-btn');
+  const filterDropdown = document.getElementById('filter-dropdown');
+  const filterCountSpan = document.getElementById('filter-count');
+  const applyFiltersBtn = document.getElementById('apply-filters');
+  const clearFiltersBtn = document.getElementById('clear-filters');
+  const searchInput = document.getElementById('search-input');
+  const searchClear = document.getElementById('search-clear');
+  const searchActiveBadge = document.getElementById('search-active-badge');
+  const searchTermDisplay = document.getElementById('search-term-display');
+  const loadMoreContainer = document.getElementById('load-more-container');
+  const loadMoreBtn = document.getElementById('load-more-btn');
+  const searchWrapper = document.getElementById('search-wrapper');
+
+  // ==================== BATCH NAVIGATION ====================
+  function openBatchPage(batchId, batchName) {
+    let courseSlug = batchName
+      .toLowerCase()
+      .replace(/[^a-z0-9\s-]/g, '')
+      .replace(/\s+/g, '-')
+      .replace(/-+/g, '-');
+    
+    const encodedId = encodeURIComponent(batchId);
+    const encodedName = encodeURIComponent(courseSlug);
+    
+    window.location.href = `/pwatch?id=${encodedId}&name=${encodedName}`;
+  }
+
+  function highlightText(text, query) {
+    if (!query || query.trim().length < 1) return text;
+    // First escape HTML
+    const escapedText = text.replace(/</g, '&lt;').replace(/>/g, '&gt;');
+    // Escape regex special chars
+    const escapedQuery = query.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+    const regex = new RegExp(`(${escapedQuery})`, 'gi');
+    return escapedText.replace(regex, '<mark class="search-highlight">$1</mark>');
+  }
+
+  function showToast(msg, type = 'success') {
+    const container = document.getElementById('toast-container');
+    const toast = document.createElement('div');
+    toast.className = 'toast';
+    toast.innerHTML = `<i class="fas ${type === 'success' ? 'fa-check-circle' : 'fa-exclamation-circle'}"></i> ${msg}`;
+    container.appendChild(toast);
+    setTimeout(() => {
+      toast.style.opacity = '0';
+      toast.style.transition = 'opacity 0.3s';
+      setTimeout(() => toast.remove(), 300);
+    }, 3000);
+  }
+
+  async function fetchBatches() {
+    skeletonGrid.classList.remove('hidden');
+    grid.classList.add('hidden');
+    loadMoreContainer.classList.add('hidden');
+    try {
+      const cached = localStorage.getItem('mtaiirus_pw_cache');
+      const cachedTime = localStorage.getItem('mtaiirus_pw_cache_time');
+      if (cached && cachedTime && (Date.now() - parseInt(cachedTime)) < 86400000) {
+        allBatches = JSON.parse(cached);
+      } else {
+        const res = await fetch(BATCH_API);
+        if (!res.ok) throw new Error('Network response was not ok');
+        const data = await res.json();
+        let batches = data.batches || data;
+        allBatches = batches.filter(b => {
+          if (EXCLUDED.some(e => b.name.includes(e))) return false;
+          return true;
+        });
+        localStorage.setItem('mtaiirus_pw_cache', JSON.stringify(allBatches));
+        localStorage.setItem('mtaiirus_pw_cache_time', Date.now().toString());
+      }
+      applyFiltersAndRender();
+    } catch (err) {
+      showToast('Failed to load batches. Please try again.', 'error');
+      emptyState.classList.remove('hidden');
+      batchCountSpan.textContent = '0 batches';
+    } finally {
+      skeletonGrid.classList.add('hidden');
+      grid.classList.remove('hidden');
+    }
+  }
+
+  function updateSearchBadge() {
+    if (searchQuery && searchQuery.trim().length > 0) {
+      searchTermDisplay.textContent = searchQuery;
+      searchActiveBadge.classList.remove('hidden');
+      searchClear.classList.add('visible');
+    } else {
+      searchActiveBadge.classList.add('hidden');
+      searchClear.classList.remove('visible');
+    }
+  }
+
+  function applyFiltersAndRender() {
+    filteredBatches = allBatches.filter(b => {
+      const name = b.name.toUpperCase();
+      // SEARCH FILTER - case insensitive, matches if ALL terms are found
+      if (searchQuery && searchQuery.trim().length > 0) {
+        const searchTerms = searchQuery.toUpperCase().trim().split(/\s+/);
+        const matchesSearch = searchTerms.every(term => name.includes(term));
+        if (!matchesSearch) return false;
+      }
+      // CLASS FILTER
+      if (activeFilters.length > 0) {
+        let match = false;
+        if (activeFilters.includes('11') && (name.includes('11') || name.includes('11TH'))) match = true;
+        if (activeFilters.includes('12') && (name.includes('12') || name.includes('12TH'))) match = true;
+        if (activeFilters.includes('dropper') && (name.includes('NEET') || name.includes('JEE') || name.includes('DROPPER') || name.includes('CRASH COURSE'))) match = true;
+        if (!match) return false;
+      }
+      return true;
+    });
+    
+    // Sort: trending first, then enrolled
+    filteredBatches.sort((a, b) => {
+      const aTrend = TRENDING.some(t => a.name.includes(t));
+      const bTrend = TRENDING.some(t => b.name.includes(t));
+      if (aTrend && !bTrend) return -1;
+      if (!aTrend && bTrend) return 1;
+      const aEnr = enrolledBatches.some(e => e._id === a._id);
+      const bEnr = enrolledBatches.some(e => e._id === b._id);
+      if (aEnr && !bEnr) return -1;
+      if (!aEnr && bEnr) return 1;
+      return 0;
+    });
+    
+    const countText = filteredBatches.length === 1 ? '1 batch' : `${filteredBatches.length} batches`;
+    batchCountSpan.textContent = countText;
+    updateSearchBadge();
+    currentPage = 1;
+    renderPage();
+  }
+
+  function renderPage() {
+    const start = (currentPage - 1) * ITEMS_PER_PAGE;
+    const end = start + ITEMS_PER_PAGE;
+    const pageBatches = filteredBatches.slice(start, end);
+    
+    if (filteredBatches.length === 0) {
+      emptyState.classList.remove('hidden');
+      grid.innerHTML = '';
+      loadMoreContainer.classList.add('hidden');
+      return;
+    }
+    
+    emptyState.classList.add('hidden');
+    grid.innerHTML = '';
+    
+    pageBatches.forEach((batch, idx) => {
+      const isEnrolled = enrolledBatches.some(e => e._id === batch._id);
+      const isTrending = TRENDING.some(t => batch.name.includes(t));
+      const imgUrl = batch.previewImage || 'https://i.ibb.co/9Hm0NqsH/f69ed82b-7169-45fc-a82b-915e453c6340.png';
+      
+      const displayName = searchQuery && searchQuery.trim().length > 0 
+        ? highlightText(batch.name, searchQuery)
+        : batch.name.replace(/</g, '&lt;').replace(/>/g, '&gt;');
+      
+      const safeName = batch.name.replace(/"/g, '&quot;').replace(/'/g, '&#39;');
+      
+      const card = document.createElement('div');
+      card.className = 'card';
+      card.style.animation = `cardSlideUp 0.4s ease forwards ${idx * 0.05}s`;
+      card.style.opacity = '0';
+      card.innerHTML = `
+        <div class="card-image" data-batch-id="${batch._id}" data-batch-name="${safeName}">
+          <img src="${imgUrl}" alt="${batch.name}" loading="lazy" onerror="this.src='https://i.ibb.co/9k8fbHmZ/empty-state.png'">
+          <div class="card-badges">
+            ${isTrending ? '<span class="badge badge-trending"><i class="fas fa-chart-line"></i> Trending</span>' : ''}
+            ${isEnrolled ? '<span class="badge badge-enrolled"><i class="fas fa-check"></i> Enrolled</span>' : ''}
+          </div>
+        </div>
+        <div class="card-body">
+          <div class="card-title">${displayName}</div>
+          <div class="card-meta">
+            <span><i class="fas fa-book-open"></i> Study Material</span>
+            <span><i class="fas fa-video"></i> Video Lectures</span>
+          </div>
+          <div class="card-actions">
+            <button class="btn btn-primary study-btn" data-batch-id="${batch._id}" data-batch-name="${safeName}">▶ Study Now</button>
+            <button class="btn ${isEnrolled ? 'btn-danger' : 'btn-secondary'} enroll-btn" data-batch-id="${batch._id}" data-batch-name="${safeName}">${isEnrolled ? 'Unenroll' : 'Enroll'}</button>
+          </div>
+        </div>
+      `;
+      grid.appendChild(card);
+      
+      // Trigger animation
+      setTimeout(() => {
+        card.style.opacity = '1';
+      }, 10);
+    });
+    
+    // Event delegation for card clicks
+    if (end >= filteredBatches.length) {
+      loadMoreContainer.classList.add('hidden');
+    } else {
+      loadMoreContainer.classList.remove('hidden');
+    }
+  }
+
+  // Event delegation for all card buttons
+  grid.addEventListener('click', function(e) {
+    const studyBtn = e.target.closest('.study-btn');
+    const enrollBtn = e.target.closest('.enroll-btn');
+    const cardImage = e.target.closest('.card-image');
+    
+    if (studyBtn) {
+      e.stopPropagation();
+      const batchId = studyBtn.dataset.batchId;
+      const batchName = studyBtn.dataset.batchName;
+      openBatchPage(batchId, batchName);
+    } else if (cardImage && !e.target.closest('button')) {
+      const batchId = cardImage.dataset.batchId;
+      const batchName = cardImage.dataset.batchName;
+      openBatchPage(batchId, batchName);
+    } else if (enrollBtn) {
+      e.stopPropagation();
+      const batchId = enrollBtn.dataset.batchId;
+      const batchName = enrollBtn.dataset.batchName;
+      toggleEnroll(enrollBtn, batchId, batchName);
+    }
+  });
+
+  function toggleEnroll(btn, id, name) {
+    const idx = enrolledBatches.findIndex(e => e._id === id);
+    if (idx > -1) {
+      enrolledBatches.splice(idx, 1);
+      showToast('Removed from enrolled', 'success');
+    } else {
+      enrolledBatches.push({ _id: id, name: name });
+      showToast('Enrolled successfully!', 'success');
+    }
+    localStorage.setItem('mtaiirus_enrolled', JSON.stringify(enrolledBatches));
+    // Re-render to update all cards
+    applyFiltersAndRender();
+  }
+
+  // ==================== SEARCH FUNCTIONALITY ====================
+  
+  // Debounced search function
+  let searchTimeout;
+  searchInput.addEventListener('input', function(e) {
+    // Clear previous timeout
+    if (searchTimeout) clearTimeout(searchTimeout);
+    
+    // Debounce for 300ms
+    searchTimeout = setTimeout(() => {
+      searchQuery = e.target.value.trim();
+      applyFiltersAndRender();
+    }, 300);
+  });
+  
+  // Immediate search on Enter key
+  searchInput.addEventListener('keydown', function(e) {
+    if (e.key === 'Enter') {
+      e.preventDefault();
+      if (searchTimeout) clearTimeout(searchTimeout);
+      searchQuery = searchInput.value.trim();
+      applyFiltersAndRender();
+    }
+    // Clear search on Escape
+    if (e.key === 'Escape') {
+      searchInput.value = '';
+      searchQuery = '';
+      applyFiltersAndRender();
+      searchInput.blur();
+    }
+  });
+  
+  // Clear search button
+  searchClear.addEventListener('click', function() {
+    searchInput.value = '';
+    searchQuery = '';
+    applyFiltersAndRender();
+    searchInput.focus();
+  });
+
+  // ==================== FILTER FUNCTIONALITY ====================
+  
+  document.querySelectorAll('.filter-option').forEach(opt => {
+    opt.addEventListener('click', (e) => {
+      e.stopPropagation();
+      e.preventDefault();
+      opt.classList.toggle('selected');
+    });
+  });
+  
+  applyFiltersBtn.addEventListener('click', () => {
+    activeFilters = [];
+    document.querySelectorAll('.filter-option.selected').forEach(opt => {
+      activeFilters.push(opt.dataset.class);
+    });
+    if (activeFilters.length > 0) {
+      filterCountSpan.classList.remove('hidden');
+      filterCountSpan.textContent = activeFilters.length;
+      filterBtn.classList.add('active');
+    } else {
+      filterCountSpan.classList.add('hidden');
+      filterBtn.classList.remove('active');
+    }
+    filterDropdown.classList.remove('open');
+    applyFiltersAndRender();
+  });
+  
+  clearFiltersBtn.addEventListener('click', () => {
+    document.querySelectorAll('.filter-option').forEach(opt => opt.classList.remove('selected'));
+    activeFilters = [];
+    filterCountSpan.classList.add('hidden');
+    filterBtn.classList.remove('active');
+    applyFiltersAndRender();
+    filterDropdown.classList.remove('open');
+  });
+  
+  filterBtn.addEventListener('click', (e) => {
+    e.stopPropagation();
+    filterDropdown.classList.toggle('open');
+  });
+  
+  document.addEventListener('click', (e) => {
+    if (!filterBtn.contains(e.target) && !filterDropdown.contains(e.target)) {
+      filterDropdown.classList.remove('open');
+    }
+  });
+  
+  // Load more button
+  loadMoreBtn.addEventListener('click', () => {
+    currentPage++;
+    renderPage();
+  });
+
+  // Initialize the app
+  fetchBatches();
+  
+})();
+</script>
+</body>
+</html>

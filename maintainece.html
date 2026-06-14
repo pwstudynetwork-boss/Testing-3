@@ -1,0 +1,475 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover, maximum-scale=1.0, user-scalable=no">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="theme-color" content="#D4540E">
+  <title>Under Maintenance | Mtaiirus</title>
+  <meta name="description" content="Mtaiirus is currently under scheduled maintenance. We'll be back soon with improved performance.">
+  <link rel="icon" href="https://i.ibb.co/G3TLgSgJ/pngtree-mv-vm-letter-vector-logo-image-332121.jpg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800;900&family=DM+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <style>
+    :root {
+      --accent: #D4540E;
+      --accent-light: #F0A87A;
+      --accent-soft: rgba(212,84,14,0.15);
+      --bg-deep: #1A1814;
+      --surface: rgba(37,34,30,0.8);
+      --text-primary: #F5F2EB;
+      --text-secondary: #B0ADA7;
+      --border-subtle: rgba(245,242,235,0.08);
+      --maintenance-orange: #F0A87A;
+      --live-green: #2D6A3F;
+      --live-green-light: #4ade80;
+      --vibrant: #e8651f;
+      --font-heading: 'Syne', sans-serif;
+      --font-body: 'DM Sans', sans-serif;
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      background: radial-gradient(ellipse at 50% 30%, #25221E 0%, #0D0B0A 100%);
+      font-family: var(--font-body);
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 2rem;
+      margin: 0;
+      position: relative;
+    }
+
+    body::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: 
+        radial-gradient(circle at 25% 35%, rgba(212,84,14,0.06) 0%, transparent 50%),
+        radial-gradient(circle at 75% 65%, rgba(45,106,63,0.06) 0%, transparent 50%);
+      pointer-events: none;
+      animation: breathe 10s ease-in-out infinite alternate;
+    }
+
+    @keyframes breathe {
+      0% { opacity: 0.5; }
+      100% { opacity: 1; }
+    }
+
+    .main-container {
+      position: relative;
+      width: 100%;
+      max-width: 1000px;
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+    }
+
+    /* Header */
+    .header-section { text-align: center; }
+
+    .logo-cluster {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 1.2rem;
+      margin-bottom: 1.5rem;
+      flex-wrap: wrap;
+    }
+
+    .logo-dot {
+      width: 56px; height: 56px;
+      border-radius: 16px;
+      background: rgba(245,242,235,0.04);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border: 1px solid rgba(45,106,63,0.35);
+      display: flex; align-items: center; justify-content: center;
+      font-size: 1.7rem;
+      color: var(--live-green-light);
+      transition: all 0.35s cubic-bezier(0.25,0.8,0.25,1.2);
+      box-shadow: 0 8px 24px rgba(0,0,0,0.4);
+    }
+
+    .logo-dot.vibrant-dot {
+      color: var(--vibrant);
+      border-color: rgba(232,101,31,0.45);
+    }
+
+    .logo-dot:hover {
+      transform: translateY(-6px) scale(1.08);
+      border-color: var(--live-green-light);
+      box-shadow: 0 16px 32px rgba(45,106,63,0.25);
+    }
+
+    .logo-dot.vibrant-dot:hover {
+      border-color: var(--accent);
+      box-shadow: 0 16px 32px rgba(212,84,14,0.3);
+    }
+
+    /* Brand Logo */
+    .brand-logo {
+      width: 64px; height: 64px;
+      border-radius: 16px;
+      object-fit: contain;
+      border: 1px solid rgba(240,168,122,0.3);
+      background: #fff;
+      box-shadow: 0 8px 24px rgba(212,84,14,0.2);
+      transition: transform 0.3s ease;
+    }
+
+    .brand-logo:hover {
+      transform: scale(1.1);
+    }
+
+    /* Maintenance Badge */
+    .maintenance-badge {
+      display: inline-flex; align-items: center; gap: 0.6rem;
+      background: var(--accent-soft);
+      border: 1px solid rgba(240,168,122,0.4);
+      padding: 0.6rem 1.6rem; border-radius: 3rem;
+      font-family: var(--font-heading);
+      font-weight: 700; font-size: 0.85rem;
+      color: var(--accent-light);
+      letter-spacing: 1px; text-transform: uppercase;
+      margin-bottom: 0.8rem;
+    }
+
+    .maintenance-badge i {
+      animation: spin-slow 3s linear infinite;
+      font-size: 0.9rem;
+    }
+
+    @keyframes spin-slow {
+      from { transform: rotate(0deg); }
+      to { transform: rotate(360deg); }
+    }
+
+    h1 {
+      font-family: var(--font-heading);
+      font-size: clamp(2.8rem, 7vw, 4.5rem);
+      font-weight: 800; letter-spacing: -1.5px;
+      background: linear-gradient(135deg, #F5F2EB 0%, #F0A87A 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      margin-bottom: 0.4rem; line-height: 1.1;
+    }
+
+    .maintenance-subtitle {
+      font-size: 1.1rem;
+      color: var(--accent-light);
+      font-weight: 500; letter-spacing: 0.5px;
+    }
+
+    /* Service Cards */
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+      gap: 1.2rem; margin: 1rem 0;
+    }
+
+    .service-card {
+      background: var(--surface);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      border: 1px solid rgba(45,106,63,0.3);
+      border-radius: 1.5rem;
+      padding: 1.8rem 1.2rem; text-align: center;
+      transition: all 0.35s ease;
+      position: relative; overflow: hidden;
+      box-shadow: 0 8px 24px rgba(45,106,63,0.06);
+    }
+
+    .service-card.main-web-card {
+      border-color: rgba(240,168,122,0.4);
+      opacity: 0.75;
+      box-shadow: 0 8px 24px rgba(212,84,14,0.08);
+    }
+
+    .service-card::before {
+      content: ""; position: absolute;
+      top: -50%; left: -50%;
+      width: 200%; height: 200%;
+      background: radial-gradient(circle, rgba(45,106,63,0.04) 0%, transparent 60%);
+      opacity: 0; transition: opacity 0.4s;
+    }
+
+    .service-card.main-web-card::before {
+      background: radial-gradient(circle, rgba(212,84,14,0.04) 0%, transparent 60%);
+    }
+
+    .service-card:hover::before { opacity: 1; }
+
+    .service-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 20px 40px rgba(0,0,0,0.5);
+    }
+
+    .service-card:not(.main-web-card):hover {
+      border-color: rgba(45,106,63,0.6);
+    }
+
+    .service-card.main-web-card:hover {
+      border-color: rgba(240,168,122,0.6);
+      opacity: 1;
+    }
+
+    .card-icon {
+      font-size: 2.4rem; margin-bottom: 1rem;
+      color: var(--live-green-light);
+      filter: drop-shadow(0 0 12px rgba(45,106,63,0.3));
+    }
+
+    .service-card.main-web-card .card-icon {
+      color: var(--accent-light);
+      filter: drop-shadow(0 0 12px rgba(240,168,122,0.3));
+    }
+
+    .service-card.vibrant-card .card-icon {
+      color: var(--accent);
+      filter: drop-shadow(0 0 12px rgba(212,84,14,0.4));
+    }
+
+    .card-title {
+      font-family: var(--font-heading);
+      font-weight: 700; font-size: 1.4rem;
+      letter-spacing: 0.5px; color: #F5F2EB;
+      margin-bottom: 0.3rem;
+    }
+
+    .card-status {
+      font-size: 0.78rem; font-weight: 700;
+      text-transform: uppercase; letter-spacing: 1.5px;
+      display: flex; align-items: center; justify-content: center;
+      gap: 0.3rem;
+      color: var(--live-green-light);
+    }
+
+    .card-status.maintenance-status { color: var(--accent-light); }
+
+    .card-status i { font-size: 0.5rem; animation: pulse-dot-green 2s infinite; }
+
+    .card-status.maintenance-status i { animation: pulse-dot-orange 2s infinite; }
+
+    @keyframes pulse-dot-green {
+      0%,100% { opacity: 1; transform: scale(1); }
+      50% { opacity: 0.5; transform: scale(1.5); }
+    }
+
+    @keyframes pulse-dot-orange {
+      0%,100% { opacity: 1; transform: scale(1); }
+      50% { opacity: 0.3; transform: scale(1.5); }
+    }
+
+    /* Message Card */
+    .message-card {
+      background: rgba(37,34,30,0.6);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border: 1px solid rgba(240,168,122,0.12);
+      border-radius: 2rem;
+      padding: 2rem 2.2rem; text-align: center;
+    }
+
+    .maintenance-text-large {
+      font-family: var(--font-heading);
+      font-size: 1.8rem; font-weight: 800;
+      color: var(--accent-light);
+      text-transform: uppercase; letter-spacing: 3px;
+      margin-bottom: 1rem;
+      text-shadow: 0 0 30px rgba(240,168,122,0.25);
+    }
+
+    .highlight-text {
+      font-size: 1.15rem; line-height: 1.8;
+      color: var(--text-secondary); margin-bottom: 1.2rem;
+    }
+
+    .highlight-text strong { color: #F5F2EB; }
+
+    .badge-scheduled {
+      display: inline-block;
+      background: var(--accent-soft);
+      border: 1px solid rgba(240,168,122,0.3);
+      padding: 0.7rem 1.8rem; border-radius: 3rem;
+      font-weight: 600; color: var(--accent-light);
+      font-size: 0.95rem; letter-spacing: 0.3px;
+    }
+
+    .badge-scheduled i { margin-right: 0.4rem; }
+
+    .live-services-note {
+      display: inline-flex; align-items: center; gap: 0.5rem;
+      background: rgba(45,106,63,0.1);
+      border: 1px solid rgba(45,106,63,0.3);
+      padding: 0.5rem 1.4rem; border-radius: 3rem;
+      font-weight: 600; font-size: 0.85rem;
+      color: var(--live-green-light); margin-top: 0.8rem;
+    }
+
+    .live-services-note i {
+      font-size: 0.5rem;
+      animation: pulse-dot-green 2s infinite;
+    }
+
+    /* Team Footer */
+    .team-footer {
+      display: flex; align-items: center; justify-content: center;
+      gap: 1rem; flex-wrap: wrap;
+      padding-top: 1rem;
+      border-top: 1px solid rgba(245,242,235,0.06);
+      margin-top: 0.5rem;
+    }
+
+    .team-name-large {
+      font-family: var(--font-heading);
+      font-weight: 800; font-size: 1.6rem;
+      background: linear-gradient(to right, #F0A87A, #D4540E);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    .btn-modern {
+      background: var(--accent-soft);
+      border: 1px solid rgba(240,168,122,0.35);
+      color: var(--accent-light);
+      padding: 0.7rem 2rem; border-radius: 2.5rem;
+      font-family: var(--font-body);
+      font-weight: 600; cursor: pointer;
+      transition: all 0.3s; font-size: 0.9rem;
+      display: inline-flex; align-items: center; gap: 0.5rem;
+      letter-spacing: 0.3px;
+    }
+
+    .btn-modern:hover {
+      background: rgba(212,84,14,0.25);
+      border-color: var(--accent);
+      color: #fff;
+      box-shadow: 0 8px 24px rgba(212,84,14,0.2);
+    }
+
+    @media (max-width: 600px) {
+      .services-grid { grid-template-columns: repeat(2, 1fr); }
+      .message-card { padding: 1.5rem; }
+      .maintenance-text-large { font-size: 1.3rem; letter-spacing: 2px; }
+      .brand-logo { width: 48px; height: 48px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="main-container">
+    
+    <!-- Header -->
+    <div class="header-section">
+      <div class="logo-cluster">
+        <img class="brand-logo" src="https://i.ibb.co/G3TLgSgJ/pngtree-mv-vm-letter-vector-logo-image-332121.jpg" alt="Mtaiirus Logo" onerror="this.style.display='none'">
+        <div class="logo-dot"><i class="fas fa-globe"></i></div>
+        <div class="logo-dot"><i class="fas fa-cubes"></i></div>
+        <div class="logo-dot"><i class="fas fa-code"></i></div>
+        <div class="logo-dot vibrant-dot"><i class="fas fa-feather-alt"></i></div>
+      </div>
+      <div class="maintenance-badge">
+        <i class="fas fa-cog"></i> Main Web Under Maintenance
+      </div>
+      <h1>We'll Be Right Back</h1>
+      <p class="maintenance-subtitle">Only the main website is temporarily unavailable</p>
+    </div>
+
+    <!-- Service Cards -->
+    <div class="services-grid">
+      <div class="service-card main-web-card">
+        <div class="card-icon"><i class="fas fa-globe"></i></div>
+        <div class="card-title">Main Web</div>
+        <div class="card-status maintenance-status"><i class="fas fa-circle"></i> Maintenance</div>
+      </div>
+      <div class="service-card">
+        <div class="card-icon"><i class="fas fa-power-off"></i></div>
+        <div class="card-title">PW</div>
+        <div class="card-status"><i class="fas fa-circle"></i> Live</div>
+      </div>
+      <div class="service-card">
+        <div class="card-icon"><i class="fas fa-arrow-right"></i></div>
+        <div class="card-title">NXT</div>
+        <div class="card-status"><i class="fas fa-circle"></i> Live</div>
+      </div>
+      <div class="service-card">
+        <div class="card-icon"><i class="fas fa-sync-alt"></i></div>
+        <div class="card-title">SW</div>
+        <div class="card-status"><i class="fas fa-circle"></i> Live</div>
+      </div>
+      <div class="service-card">
+        <div class="card-icon"><i class="fas fa-lock"></i></div>
+        <div class="card-title">S&F</div>
+        <div class="card-status"><i class="fas fa-circle"></i> Live</div>
+      </div>
+      <div class="service-card vibrant-card">
+        <div class="card-icon"><i class="fas fa-spa"></i></div>
+        <div class="card-title">VIBRANT</div>
+        <div class="card-status"><i class="fas fa-circle"></i> Live</div>
+      </div>
+    </div>
+
+    <!-- Message -->
+    <div class="message-card">
+      <div class="maintenance-text-large">
+        <i class="fas fa-tools" style="margin-right: 0.5rem;"></i> Main Web Maintenance
+      </div>
+      <p class="highlight-text">
+        Only the <strong>main website</strong> is currently undergoing<br>
+        scheduled maintenance. It will return <span style="color: #F0A87A; font-weight: 700;">1 month later</span><br>
+        with improved performance and reliability.
+      </p>
+      <div class="badge-scheduled">
+        <i class="fas fa-calendar-alt"></i> Main Web — Under Maintenance · Returning in 1 month
+      </div>
+      <div class="live-services-note" style="margin-top: 1rem;">
+        <i class="fas fa-circle"></i> PW · NXT · SW · S&F · VIBRANT — All Fully Operational
+      </div>
+      <p style="color: #B0ADA7; font-size: 0.9rem; margin-top: 1rem;">
+        All other services remain available. Thank you for your patience.
+      </p>
+    </div>
+
+    <!-- Team Footer -->
+    <div class="team-footer">
+      <i class="fas fa-heart" style="color: #D4540E;"></i>
+      <span style="color: #B0ADA7; font-weight: 500;">Maintenance by</span>
+      <span class="team-name-large">Team Mtaiirus</span>
+      <i class="fas fa-heart" style="color: #D4540E;"></i>
+      <button class="btn-modern" onclick="alert('📋 Only the main website is under maintenance. PW, NXT, SW, S&F, and VIBRANT are all fully live. Team Mtaiirus is working on the main web. Thank you!')">
+        <i class="fas fa-envelope"></i> Get Updates
+      </button>
+    </div>
+
+  </div>
+
+  <script>
+    // Security Layer
+    (function() {
+      'use strict';
+      var REDIRECT = 'kehamhai.html', _dtFired = false, _threshold = 160;
+      function _redirect() { if (_dtFired) return; _dtFired = true; window.location.replace(REDIRECT); }
+      function _checkSize() { var w = window.outerWidth - window.innerWidth, h = window.outerHeight - window.innerHeight; if (w > _threshold || h > _threshold) _redirect(); }
+      setInterval(_checkSize, 600);
+      setInterval(function() { (function() { var t = new Date(); debugger; if (new Date() - t > 100) _redirect(); })(); }, 3000);
+      document.addEventListener('contextmenu', function(e) { e.preventDefault(); e.stopPropagation(); return false; }, true);
+      ['selectstart','dragstart','copy','cut'].forEach(function(ev) { document.addEventListener(ev, function(e) { e.preventDefault(); return false; }); });
+      document.addEventListener('keydown', function(e) { var k = e.key || ''; if (e.keyCode === 123 || k === 'F12') { e.preventDefault(); e.stopPropagation(); return false; } if ((e.ctrlKey || e.metaKey) && e.shiftKey && ['I','J','C','i','j','c'].includes(k)) { e.preventDefault(); e.stopPropagation(); return false; } if ((e.ctrlKey || e.metaKey) && ['u','U','s','S','p','P','a','A'].includes(k)) { e.preventDefault(); e.stopPropagation(); return false; } }, true);
+      window.addEventListener('beforeprint', function(e) { e.stopImmediatePropagation(); window.print = function() { return false; }; }, true);
+      try { var _n = function() {}; ['log','warn','error','info','debug','table','dir','dirxml','trace','group','groupCollapsed','groupEnd','time','timeEnd','profile','profileEnd','count','clear'].forEach(function(m) { if (console[m]) console[m] = _n; }); } catch(_) {}
+      document.documentElement.style.setProperty('-webkit-user-select','none');
+      document.documentElement.style.setProperty('-moz-user-select','none');
+      document.documentElement.style.setProperty('-ms-user-select','none');
+      document.documentElement.style.setProperty('user-select','none');
+    })();
+  </script>
+</body>
+</html>
