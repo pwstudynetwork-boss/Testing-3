@@ -745,7 +745,7 @@ let batchData = null;
 let videoTopicSelected = null;
 let notesTopicSelected = null;
 let playerWindow = null;
-const PLAYER_URL = 'player.html';
+const PLAYER_URL = '../sw/player.html';
 
 function openPlayer(videoUrl, title, quality = '') {
   if (!videoUrl) { showToast('❌ No video URL available', 'error'); return; }
